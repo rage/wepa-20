@@ -25,6 +25,8 @@ Kurssilla ei ole viikkokohtaisia deadlineja. Kurssin suorittamiselle on kuitenki
 |---|---|---|
 | 9.11.2020 | 12.11.2020 | 16.11.2020 |
 
+**Tehtävien deadline** on samassa kuin vertaisarvioinnin deadline.
+
 Huomioithan työmäärän ja projektin deadlinen suunnitellessasi omaa aikatauluasi kurssin osalta.
 
 ## Arvosanan korottaminen ##
