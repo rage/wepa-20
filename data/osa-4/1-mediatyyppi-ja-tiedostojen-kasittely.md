@@ -194,7 +194,7 @@ Pääsemme kaikkiin kenttiin käsiksi `MultipartFile`-olion kautta; muokataan ai
 public String save(@RequestParam("file") MultipartFile file) throws IOException {
     FileObject fo = new FileObject();
 
-    fo.setName(file.getOriginalName());
+    fo.setName(file.getOriginalFilename());
     fo.setMediaType(file.getContentType());
     fo.setSize(file.getSize());
     fo.setContent(file.getBytes());
