@@ -61,7 +61,7 @@ Ohjelmat voi ladata myös NetBeansiin, jossa ne toimivat kuten muidenkin ohjelmo
 
 ## Ensimmäinen palvelinohjelmisto
 
-Ensimmäinen palvelinohjelmisto -- tai sovelluksen koodi -- voi tuntia aluksi hieman monimutkaiselta. Sovellus, joka käynnistää palvelimen ja palauttaa käyttäjälle selaimen kautta tarkasteltuna tekstin "Hei Maailma!", näyttää seuraavalta.
+Ensimmäinen palvelinohjelmisto -- tai sovelluksen koodi -- voi tuntua aluksi hieman monimutkaiselta. Sovellus, joka käynnistää palvelimen ja palauttaa käyttäjälle selaimen kautta tarkasteltuna tekstin "Hei Maailma!", näyttää seuraavalta.
 
 
 ```java
