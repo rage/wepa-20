@@ -388,7 +388,7 @@ Alla olevassa kuvassa on esimerkki tilanteesta, missä selaimella on tehty pyynt
 </programming-exercise>
 
 
-Parametrien tyypit voidaan määritellä pyynnön käsittelevään metodiin. Mikäli tiedämme, että metodi saa parametrinaan kokonaislukumuotoisen arvon, voidaan se käsitellä määritellä kokonaisluvuksi. Esimerkiksi nimen ja iän vastaanottava metodi määriteltäisiin seuraavalla tavalla.
+Parametrien tyypit voidaan määritellä pyynnön käsittelevään metodiin. Mikäli tiedämme, että metodi saa parametrinaan kokonaislukumuotoisen arvon, voidaan se määritellä kokonaisluvuksi. Esimerkiksi nimen ja iän vastaanottava metodi määriteltäisiin seuraavalla tavalla.
 
 ```java
 @GetMapping("/tervehdi")
