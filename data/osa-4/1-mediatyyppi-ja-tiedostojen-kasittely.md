@@ -227,7 +227,7 @@ public ResponseEntity<byte[]> viewFile(@PathVariable Long id) {
 Ylläolevassa esimerkissä vastaanotetaan pyyntö, minkä pohjalta tietokannasta haetaan FileObject-olio. Tämän jälkeen luodaan otsakeolio `HttpHeaders` ja asetetaan sille palautettavan datan mediatyyppi ja koko. Lopuksi palautetaan `ResponseEntity`-olio, mihin data, otsaketiedot ja pyyntöön liittyvä statusviesti (tässä tapauksessa `CREATED` eli tiedosto luotu palvelimelle) liitetään.
 
 
-Edeltävä esimerkki ei ota kantaa tiedoston nimeen tai siihen, miten se ladataan. Voimme lisätä vastaukseen [Content-Disposition](http://www.w3.org/Protocols/rfc2616/rfc2616-sec19.html)-otsakkeen, minkä avulla voidaan ehdottaa tiedoston tallennusnimeä sekä kertoa että tiedosto on liitetiedosto, jolloin se tulee tallentaa.
+Edeltävä esimerkki ei ota kantaa tiedoston nimeen tai siihen, miten se ladataan. Voimme lisätä vastaukseen [Content-Disposition](http://www.w3.org/Protocols/rfc2616/rfc2616-sec19.html)-otsakkeen, minkä avulla voidaan ehdottaa tiedoston tallennusnimeä sekä kertoa, että tiedosto on liitetiedosto, jolloin se tulee tallentaa.
 
 
 ```java
