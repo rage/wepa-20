@@ -227,7 +227,7 @@ public ResponseEntity<byte[]> viewFile(@PathVariable Long id) {
 Ylläolevassa esimerkissä vastaanotetaan pyyntö, minkä pohjalta tietokannasta haetaan FileObject-olio. Tämän jälkeen luodaan otsakeolio `HttpHeaders` ja asetetaan sille palautettavan datan mediatyyppi ja koko. Lopuksi palautetaan `ResponseEntity`-olio, mihin data, otsaketiedot ja pyyntöön liittyvä statusviesti (tässä tapauksessa `CREATED` eli tiedosto luotu palvelimelle) liitetään.
 
 
-Edeltävä esimerkki ei ota kantaa tiedoston nimeen tai siihen, miten se ladataan. Voimme lisäksi vastaukseen [Content-Disposition](http://www.w3.org/Protocols/rfc2616/rfc2616-sec19.html)-otsakkeen, minkä avulla voidaan ehdottaa tiedoston tallennusnimeä sekä kertoa että tiedosto on liitetiedosto, jolloin se tulee tallentaa.
+Edeltävä esimerkki ei ota kantaa tiedoston nimeen tai siihen, miten se ladataan. Voimme lisätä vastaukseen [Content-Disposition](http://www.w3.org/Protocols/rfc2616/rfc2616-sec19.html)-otsakkeen, minkä avulla voidaan ehdottaa tiedoston tallennusnimeä sekä kertoa että tiedosto on liitetiedosto, jolloin se tulee tallentaa.
 
 
 ```java
@@ -254,7 +254,7 @@ Toteuta toiminnallisuus, jonka avulla seuraavat toiminnot ovat käytössä.
 
 - Kun käyttäjä tekee GET-tyyppisen pyynnön osoitteeseen `/files`, pyyntöön lisätään tietokannasta löytyvät tiedostot ja käyttäjä ohjataan sivulle `files.html`.
 - Kun käyttäjä lähettää lomakkeella tiedoston osoitteeseen `/files`, pyynnöstä otetaan talteen kaikki tiedot mitä näkymässä halutaan näyttää, ja tallennetaan ne tietokantaan. Pyyntö ohjataan lopuksi uudelleen osoitteeseen `/files`.
-- Kun käyttäjä klikkaa yksittäiseen tiedostoon liittyvää nimeä sen lataamista varten, tulee tiedosto lähettää käyttäjälle. Aseta pyyntöön datan lisäksi myös tiedoston mediatyyppi että ja ehdotus tiedoston tallennusnimestä.
+- Kun käyttäjä klikkaa yksittäiseen tiedostoon liittyvää nimeä sen lataamista varten, tulee tiedosto lähettää käyttäjälle. Aseta pyyntöön datan lisäksi myös sekä tiedoston mediatyyppi että ehdotus tiedoston tallennusnimestä.
 
 
 </programming-exercise>
