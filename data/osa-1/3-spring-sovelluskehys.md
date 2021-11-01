@@ -352,7 +352,7 @@ Esimerkiksi pyyntö `/greet?greeting=Greetings&name=Earthling` palauttaa merkkij
 </programming-exercise>
 
 
-Mikäli parametreja ei tunneta, saa pyynnössä olevat parametrit saa käyttöön mm. `@RequestParam`-annotaatiolla, mitä seuraa `Map`-tietorakenne. Allaolevassa esimerkissä pyynnön parametrit asetetaan `Map`-tietorakenteeseen, jonka jälkeen kaikki pyyntöparametrien avaimet palautetaan kysyjälle.
+Mikäli parametreja ei tunneta, saa(!!!) pyynnössä olevat parametrit saa(!!!) käyttöön mm. `@RequestParam`-annotaatiolla, mitä seuraa `Map`-tietorakenne. Allaolevassa esimerkissä pyynnön parametrit asetetaan `Map`-tietorakenteeseen, jonka jälkeen kaikki pyyntöparametrien avaimet palautetaan kysyjälle.
 
 
 ```java
